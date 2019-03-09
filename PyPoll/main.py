@@ -31,6 +31,7 @@ for c in candidate:
 # Ordenar el diccionario de mayor a menor
 sorted_candidate = sorted(dictionary, key=dictionary.get, reverse=True)
 
+# Obtiene el porcentaje de cada candidato
 for r in sorted_candidate:
     lines += f"{r} : { round((candidates.count(r) / len(candidates)) * 100, 2) } % ( {candidates.count(r)} ) \r\n"
 
