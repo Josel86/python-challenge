@@ -31,7 +31,7 @@ with open(budget_csv, newline="") as csvfile:
         if(firstValue):
             firstValue = False
         else:
-            changes.append(int(row[1]) - lastchange)
+            changes.append(lastchange - int(row[1]))
 
         lastchange = int(row[1])
 
